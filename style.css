@@ -1,0 +1,57 @@
+/* Define the grid container for the body element */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px;
+}
+
+header {
+  background-color: #fed7e2;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 32px;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+aside {
+  background-color: #f687b3;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 32px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+
+main {
+  background-color: #d53f8c;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 32px;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 9;
+}
+
+footer {
+  background-color: #97266d;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 32px;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 9;
+  grid-row-end: 11;
+}
